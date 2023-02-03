@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 62.5%;
+}
+
 body {
     background: #bfd7e4;
     font-family: 'Poppins', sans-serif;
@@ -245,4 +249,87 @@ legend {
     background: #d65445;
 
     cursor: pointer;
+}
+
+@media (max-width: 860px) {
+    .page {
+        width: 650px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .form h2 {
+        padding: 50px 200px 50px;
+    }
+
+    .form-wrapper {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .page {
+        width: 500px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    header img {
+        width: 200px;
+        height: 75px;
+    }
+
+    .form h2 {
+        padding: 30px 150px 30px;
+    }
+
+    body {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .page {
+        width: 400px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .form h2 {
+        padding: 30px 100px 30px;
+    }
+
+    .form-wrapper {
+        padding: 30px;
+    }
+
+    fieldset {
+        width: 340px;
+    }
+
+    .col-2 {
+        display: block;
+    }
+
+    .col-2 .input-wrapper + .input-wrapper {
+        margin-top: 20px;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    .col-3 {
+        display: block;
+    }
 }
